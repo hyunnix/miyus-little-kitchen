@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Miyu&#39;s Little Kitchen</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="app">
+  <header>
+    <div class="tiny">♡ PIXEL PET STATION ♡</div>
+    <h1>Miyu's Little Kitchen</h1>
+    <p>A tiny smart feeder for a very special kitty!</p>
+  </header>
+
+  <div class="layout">
+    <section class="game">
+      <div class="game-top">
+        <span>♡ MIYU CAM</span>
+        <span id="powerStatus">● ONLINE</span>
+      </div>
+
+      <div class="screen" id="screen">
+        <div class="screen-title" id="status">READY TO EAT ♡</div>
+        <div class="kitty" id="kitty">
+          <div class="pixel-cat" id="pixelCat" role="img" aria-label="Pixel cat Miyu"></div>
+          <div class="mood" id="mood">♡ HAPPY ♡</div>
+        </div>
+
+        <p id="message">Miyu is waiting for her food ♡</p>
+      </div>
+
+      <div class="feeder">
+        <div class="tank">
+          <div class="tank-label">FOOD TANK ♡</div>
+          <div class="kibble" id="kibble">● ● ● ● ●<br>● ● ● ● ●</div>
+        </div>
+        <div class="spout"></div>
+        <div class="falling" id="falling">● ● ●</div>
+        <div class="bowl">♡ MIYU ♡</div>
+      </div>
+
+      <div class="stats">
+        <div><small>FOOD LEFT</small><strong id="food">200g</strong></div>
+        <div><small>PORTION</small><strong id="portion">20g</strong></div>
+        <div><small>FEEDS</small><strong id="feeds">0</strong></div>
+      </div>
+
+      <div class="progress"><div id="bar"></div></div>
+      <p class="warning" id="warning"></p>
+    </section>
+
+    <section class="controls">
+      <div class="group">
+        <h2>01 / POWER</h2>
+        <button id="powerBtn">⏻ Turn OFF</button>
+      </div>
+
+      <div class="group">
+        <h2>02 / PORTION SIZE</h2>
+        <div class="buttons">
+          <button class="portionBtn" data-size="10">10g</button>
+          <button class="portionBtn selected" data-size="20">20g</button>
+          <button class="portionBtn" data-size="30">30g</button>
+        </div>
+      </div>
+
+      <div class="group">
+        <h2>03 / MANUAL FEED</h2>
+        <button class="feed-btn" id="feedBtn">♡ FEED MIYU! ♡</button>
+      </div>
+
+      <div class="group">
+        <h2>04 / AUTO FEED</h2>
+        <label><input type="checkbox" id="auto"> Enable automatic feeding</label>
+        <div class="time-row">
+          <input type="time" id="feedTime" value="12:00">
+          <button id="advance">+ 1 HOUR</button>
+        </div>
+        <p>Simulation time: <b id="clock">11:00</b></p>
+      </div>
+
+      <div class="group">
+        <h2>05 / FOOD STORAGE</h2>
+        <div class="buttons">
+          <button id="refill">+ REFILL</button>
+          <button id="reset">↺ RESET</button>
+        </div>
+      </div>
+
+      <div class="group">
+        <h2>♡ FEEDING HISTORY</h2>
+        <ul id="history"><li>No feedings yet ♡</li></ul>
+      </div>
+    </section>
+  </div>
+  <footer>Made with ♡ for Miyu · Interactive Appliance Simulation</footer>
+</div>
+
+<div class="floating-hearts" id="hearts" aria-hidden="true"></div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
